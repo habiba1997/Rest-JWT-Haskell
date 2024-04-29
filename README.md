@@ -651,5 +651,6 @@ return $ HM.lookup key envMap
 Here, `loadEnv` returns a value inside the IO monad. `<- loadEnv` binds that value to `envMap`, and then return puts `HM.lookup key envMap` back into the IO monad.
 
 
-#   R e s t - J W T - H a s k e l l  
- 
+#   R e s t - J W T - H a s k e l l 
+ 
+ 
