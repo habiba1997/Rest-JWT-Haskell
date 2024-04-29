@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  database:
+    image: postgres
+    container_name: haskell-db
+    ports:
+      - "5436:5432"
+    env_file:
+      - example.env
+    volumes:
+      - ./schema/.:/docker-entrypoint-initdb.d/.
+      - haskellpgdata:/var/lib/postgresql/data
+volumes:
+  haskellpgdata:

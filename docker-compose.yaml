@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  haskell-database:
+    image: postgres
+    container_name: haskell-db
+    ports:
+      - "5436:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: products
+    volumes:
+      - ./db/schema/.:/docker-entrypoint-initdb.d/.
+      - haskellFullDatabase:/var/lib/postgresql/data
+  haskell:
+    image: haskell-web:3
+    container_name: haskell-web
+    ports:
+      - "8080:8080"
+    environment:
+      DB_HOST: localhost
+      DB_PORT: 5436
+      DB_USER: postgres
+      DB_PASS: 123456
+      DB_NAME: products
+      JWT_KEY: mysecretkey123
+      JWT_EXPIRES_IN_MINUTES: 15
+    depends_on:
+      - haskell-database
+volumes:
+  haskellFullDatabase:
+
+
+#    docker run  --name haskell-db -p 5436:5432  -e POSTGRES_USER=postgres  -e POSTGRES_PASSWORD=123456  -e POSTGRES_DB=products -v ./schema/.:/docker-entrypoint-initdb.d/. -v haskellpgdata:/var/lib/postgresql/data  postgres
+#  docker run -d  --name haskell-web -p 8080:8080 -e DATABASE_URL=postgres://postgres:123456@haskell-db:5432/products  --link haskell-db habibahmedmagdy/haskell-web

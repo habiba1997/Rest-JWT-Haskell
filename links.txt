@@ -1,0 +1,54 @@
+haskell beginners
+https://github.com/haskell-beginners-2022/course-plan?tab=readme-ov-file
+
+haskell Guide 
+https://www.haskell.org/ghcup/guide/
+
+
+stack docs
+https://docs.haskellstack.org/en/stable/stack_root/
+Stable stack
+https://docs.haskellstack.org/en/stable/yaml_configuration/
+
+Msys2
+https://www.msys2.org/docs/what-is-msys2/
+
+haskell -language -server
+https://haskell-language-server.readthedocs.io/en/latest/configuration.html#configuring-haskell-language-server
+https://haskell-language-server.readthedocs.io/en/stable/support/index.html
+
+
+Write REST APIs in Haskell, generate documentation and client libraries
+https://silkapp.github.io/rest/tutorial.html
+
+Servant Tutorial
+Docs » Tutorial » Querying an API
+https://docs.servant.dev/en/stable/tutorial/Client.html
+
+
+Building a JSON REST API in Haskell
+https://taylor.fausak.me/2014/10/21/building-a-json-rest-api-in-haskell/
+
+
+debug haskel
+https://www.reddit.com/r/haskell/comments/kywdhr/how_to_debug_haskell/
+https://wiki.haskell.org/Debugging#Stack_trace
+1- Debug Trace
+https://hackage.haskell.org/package/base-4.14.1.0/docs/Debug-Trace.html
+Support Debugger #105
+https://github.com/rikvdkleij/intellij-haskell/issues/105
+
+IDE
+https://discourse.haskell.org/t/solved-best-ide-for-haskell/6020/2
+HaskForce - The Haskell Plugin for IntelliJ IDEA
+https://www.reddit.com/r/haskell/comments/2kvzuz/haskforce_the_haskell_plugin_for_intellij_idea/
+https://wiki.haskell.org/IDEs#Haskell_Language_Server
+Is there a nice IDE for Haskell?
+https://www.reddit.com/r/haskell/comments/5ra1u8/is_there_a_nice_ide_for_haskell/
+
+
+
+Youtube
+https://www.youtube.com/watch?v=OrvljJbLk50
+https://www.youtube.com/watch?v=iNRKsnYLR0g
+https://www.youtube.com/watch?v=q-fKS6yV9Us&t=156s
